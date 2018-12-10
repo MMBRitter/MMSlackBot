@@ -1,0 +1,17 @@
+{
+  "name": "mkslackbot",
+  "version": "1.0.0",
+  "description": "nodejs express backend for check_mk integration with slack slash commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brent Ritter",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
