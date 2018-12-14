@@ -4,7 +4,7 @@ module.exports.cpu = function(host){
 	var options = {
 		url: "https://temp.managedmethodsdev.com/monitoring/check_mk/view.py?filled_in=filter&host_regex=" + host + "&service=CPU%20utilization&site=monitoring&view_name=cpusage&output_format=json&_username=automation&_secret=ServiceAccountSecretKey" ,
 		method: "GET",
-		rejectUnauthorized: false, 
+		strictSSL: false,
 	};
 	var rq = request(options)
 		.then(function (body){;
@@ -17,7 +17,7 @@ module.exports.mem = function(host){
 	var options = {
 		url: "https://temp.managedmethodsdev.com/monitoring/check_mk/view.py?filled_in=filter&host_regex=" + host + "&service=Memory&site=monitoring&view_name=memusage&output_format=json&_username=automation&_secret=ServiceAccountSecretKey" ,
 		method: "GET",
-		rejectUnauthorized: false, 
+		strictSSL: false,
 	};
 	var rq = request(options)
 		.then(function (body){;
